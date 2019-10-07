@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RomanToArabicNumberConverterTest {
+    private RomanToArabicNumberConverter romanToArabicNumberConverter = new RomanToArabicNumberConverter();
 
     private int convertToArabic(String romeValue) {
-        RomanToArabicNumberConverter romanToArabicNumberConverter = new RomanToArabicNumberConverter();
         return romanToArabicNumberConverter.convert(romeValue);
     }
 
