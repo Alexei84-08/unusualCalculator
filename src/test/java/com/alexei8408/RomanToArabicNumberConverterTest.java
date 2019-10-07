@@ -25,8 +25,8 @@ class RomanToArabicNumberConverterTest {
 
     @Test
     void convert_II_To_2() {
-        int arabicNumber = convertToArabic("Iv");
-        assertEquals(4, arabicNumber);
+        int arabicNumber = convertToArabic("II");
+        assertEquals(2, arabicNumber);
     }
 
     @Test
