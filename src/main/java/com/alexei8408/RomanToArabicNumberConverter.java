@@ -6,8 +6,7 @@ class RomanToArabicNumberConverter {
     int convert(String romeValue) {
         String romeValueIgnoredCase = romeValue.toUpperCase();
         int arabicNumber = 0;
-        int subtractionRuleNumber
-                = 0;
+        int subtractionRuleNumber = 0;
 
         ArrayList<String> romeList = new ArrayList<String>();
         for (int i = 0; i <= 10; i++) {
