@@ -4,17 +4,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class RomanToArabicNumberConverterTest {
-    private RomanToArabicNumberConverter romanToArabicNumberConverter = new RomanToArabicNumberConverter();
+class RomanArabicNumberConverterTest {
+    private RomanArabicNumberConverter romanArabicNumberConverter = new RomanArabicNumberConverter();
 
     private int convertToArabic(String romeValue) {
-        return romanToArabicNumberConverter.convert(romeValue);
-    }
-
-    @Test
-    void convert_I_To_1_IgnoredCase() {
-        int arabicNumber = convertToArabic("i");
-        assertEquals(1, arabicNumber);
+        return romanArabicNumberConverter.convert(romeValue);
     }
 
     @Test

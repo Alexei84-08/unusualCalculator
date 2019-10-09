@@ -6,11 +6,11 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CalculatorTest {
-    private Calculator calculator = new Calculator();
+class CalcImplTest {
+    private CalcImpl calcImpl = new CalcImpl();
 
     private BigDecimal actual(char operation) {
-        return calculator.calc(5, 7, operation);
+        return calcImpl.calc(5, 7, operation);
 
     }
 
