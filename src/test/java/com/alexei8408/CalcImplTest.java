@@ -11,7 +11,6 @@ class CalcImplTest {
 
     private BigDecimal actual(char operation) {
         return calcImpl.calc(5, 7, operation);
-
     }
 
     @Test
