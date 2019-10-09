@@ -11,10 +11,10 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
     <build>
         <finalName>UnusualCalculator</finalName>
         <defaultGoal>package</defaultGoal>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -56,7 +56,5 @@
             <version>5.5.2</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
-
 </project>
