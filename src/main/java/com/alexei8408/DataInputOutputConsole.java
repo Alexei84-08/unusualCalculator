@@ -19,21 +19,4 @@ class DataInputOutputConsole implements DataInputOutput {
     public void output(String out) {
         System.out.println("Результат вычесления: " + out);
     }
-
-//    Matcher Input() {
-//        boolean valid = false;
-//        String result = "";
-//        while (true) {
-//            result = dataInput("Введите математическое выражение: ");
-//            if (dataVerification.isRomanNumber(result)) {
-//                valid = true;
-//                return dataVerification.getMatcherRomanNumber(result);
-//            } else if (dataVerification.isArabicNumber(result)) {
-//                valid = true;
-//                return dataVerification.getMatcherArabicNumber(result);
-//            } else
-////                System.out.println("Не корректное значение!");
-//            throw new NumberFormatException("Неверно введены данные!!!");
-//        }
-//    }
 }

@@ -1,7 +1,7 @@
 package com.alexei8408;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IncorrectDataEntryException {
         DataInputOutput inputOutput = new DataInputOutputConsole();
         DataVerification verification = new DataVerificationArabicRomanNumber();
         ConverterNumber converterNumber = new RomanArabicNumberConverter();

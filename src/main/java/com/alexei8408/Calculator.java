@@ -15,7 +15,7 @@ class Calculator {
         this.calc = calc;
     }
 
-    void start() {
+    void start() throws IncorrectDataEntryException {
         String str;
         while (!(str = inputOutput.input()).equals("EXIT")) {
             if (verification.isArabicNumber(str)) {
@@ -30,7 +30,7 @@ class Calculator {
                 int b1 = converterNumber.convert(resultMatch.group(3));
                 char c = resultMatch.group(2).charAt(0);
                 inputOutput.output(converterNumber.reverseConvert(calc.calc(a1, b1, c).intValue()));
-            } else throw new NumberFormatException("Неверно введены данные!!!");
+            } else throw new IncorrectDataEntryException("Неверно введены данные!!!");
         }
     }
 }
