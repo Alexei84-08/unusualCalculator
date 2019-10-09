@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 class RomanToArabicNumberConverter {
     int convert(String romeValue) {
-        String romeValueIgnoredCase = romeValue.toUpperCase();
         int arabicNumber = 0;
         int subtractionRuleNumber = 0;
 
@@ -16,8 +15,8 @@ class RomanToArabicNumberConverter {
         romeList.set(5, "V");
         romeList.set(10, "X");
 
-        for (int marker = romeValueIgnoredCase.length(); marker > 0; marker--) {
-            String romanSymbol = romeValueIgnoredCase.substring(marker - 1, marker);
+        for (int marker = romeValue.length(); marker > 0; marker--) {
+            String romanSymbol = romeValue.substring(marker - 1, marker);
             int valueRomeNumber = romeList.indexOf(romanSymbol);
 
             if (valueRomeNumber >= subtractionRuleNumber
